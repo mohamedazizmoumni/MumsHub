@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte - Mums Hub</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body class="bg-pink-100">
+
+    <!-- ✅ Navigation Bar -->
+    <nav class="bg-white shadow-md px-10 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="./assets/logo.png" alt="Mums Hub" class="w-12 h-12">
+        </div>
+
+        <!-- Menu Items -->
+        <ul class="flex space-x-6 text-pink-500 font-medium">
+            <li class="flex items-center">
+                <img src="./assets/icons/home.svg" class="w-5 h-5 mr-2"> 
+                <a href="#" class="hover:text-pink-700">Accueil</a>
+            </li>
+            <li class="flex items-center">
+                <img src="./assets/icons/category.svg" class="w-5 h-5 mr-2"> 
+                <a href="#" class="hover:text-pink-700">Catégories</a>
+            </li>
+            <li class="flex items-center">
+                <img src="./assets/icons/Favoris.svg" class="w-5 h-5 mr-2"> 
+                <a href="#" class="hover:text-pink-700">Favoris</a>
+            </li>
+            <li class="flex items-center">
+                <img src="./assets/icons/Historique.svg" class="w-5 h-5 mr-2"> 
+                <a href="#" class="hover:text-pink-700">Historique</a>
+            </li>
+            <li class="flex items-center">
+                <img src="./assets/icons/contact.svg" class="w-5 h-5 mr-2"> 
+                <a href="#" class="hover:text-pink-700">Contact</a>
+            </li>
+            <li class="flex items-center">
+                <img src="./assets/icons/Panier.svg" class="w-5 h-5 mr-2"> 
+                <a href="#" class="hover:text-pink-700">Panier</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ✅ Main Section (Final Fixes) -->
+    <section class="min-h-screen bg-pink-50 flex justify-center items-center px-10">
+        <div class="max-w-6xl w-full grid grid-cols-12 gap-8 items-center bg-white shadow-lg rounded-lg p-10 relative">
+            
+            <!-- ✅ Left Side Decoration (Perfected Alignment) -->
+            <img src="./assets/Side.png" alt="Side Decoration" class="absolute left-0 top-1/4 h-full hidden md:block">
+
+            <!-- ✅ Left Side: Form (Now Fully Aligned) -->
+            <div class="col-span-5 pl-20 z-10">
+                <h2 class="text-3xl font-bold text-teal-700">Créer votre compte</h2>
+                <p class="text-red-500 mb-6">Donnez vos détails</p>
+                <form action="#" method="POST">
+                    <input type="text" placeholder="Votre nom complet" class="w-full p-3 mb-4 border border-gray-300 rounded">
+                    <input type="email" placeholder="Email" class="w-full p-3 mb-4 border border-gray-300 rounded">
+                    <input type="password" placeholder="Mot de passe" class="w-full p-3 mb-4 border border-gray-300 rounded">
+                    <button class="w-full bg-teal-700 text-white p-3 rounded hover:bg-teal-800">Créer compte</button>
+                </form>
+                <p class="mt-4 text-gray-500">Tu as déjà un compte ? <a href="#" class="text-blue-500">Se connecter</a></p>
+                
+                <!-- ✅ Fixed Google Signup Button -->
+                <button class="mt-3 w-full border border-gray-400 p-3 flex items-center justify-center">
+                    <img src="./assets/Google-icon.png" class="w-6 h-6 mr-2"> S'inscrire avec Google
+                </button>
+            </div>
+
+            <!-- ✅ Right Side: Illustration (Final Adjustments) -->
+            <div class="col-span-7 flex justify-center z-10">
+                <img src="./assets/illustration.png" alt="Illustration" class="w-[70%] max-w-md">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ✅ Footer -->
+    <footer class="bg-pink-200 p-10 text-gray-600">
+        <div class="container mx-auto grid grid-cols-4 gap-6 text-center">
+            <div>
+                <h3 class="font-bold">Support</h3>
+                <p>Avenue Habib Bourguiba, La Sokra, Ariana</p>
+                <p>MumsHub@gmail.com</p>
+                <p>+216 54 035 149</p>
+            </div>
+            <div>
+                <h3 class="font-bold">Compte</h3>
+                <p>Se connecter</p>
+                <p>Carte</p>
+                <p>Shop</p>
+            </div>
+            <div>
+                <h3 class="font-bold">Informations</h3>
+                <p>Politique d'utilisation</p>
+                <p>Notre contact</p>
+                <p>Termes de fidélité</p>
+            </div>
+            <div>
+                <h3 class="font-bold">Suivez-nous</h3>
+                <div class="flex justify-center space-x-3">
+                    <img src="./assets/Icon-Facebook.png" class="w-6 h-6">
+                    <img src="./assets/icon-Instagram.png" class="w-6 h-6">
+                    <img src="./assets/icon-Linkedin.png" class="w-6 h-6">
+                    <img src="./assets/Icon-Twitter.png" class="w-6 h-6">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

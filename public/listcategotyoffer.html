@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit Détail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-100">
+
+    <!-- Navbar -->
+    <header class="bg-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <img src="assets/logo.png" alt="Logo" class="w-20">
+            <nav class="flex space-x-6 text-pink-500">
+                <a href="#" class="flex items-center"><img src="assets/icons/home.svg" class="w-5 h-5 mr-2">Accueil</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/category.svg" class="w-5 h-5 mr-2">Catégories</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/favoris.svg" class="w-5 h-5 mr-2">Favoris</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/history.svg" class="w-5 h-5 mr-2">Historique</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/contact.svg" class="w-5 h-5 mr-2">Contact</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/cart.svg" class="w-5 h-5 mr-2">Panier</a>
+            </nav>
+            <div class="flex items-center space-x-2">
+                <input type="text" placeholder="Recherche" class="border rounded-full px-4 py-2 w-60">
+                <img src="assets/icons/search.png" alt="Recherche" class="w-5">
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Detail Section -->
+    <div class="container mx-auto px-6 py-10 grid grid-cols-12 gap-8">
+        <!-- Sidebar Images -->
+        <div class="col-span-2 flex flex-col space-y-2">
+            <img src="assets/robeviolet.png" class="w-full rounded-lg shadow">
+            <img src="assets/roberouge.png" class="w-full rounded-lg shadow">
+            <img src="assets/robenormal.png" class="w-full rounded-lg shadow">
+            <img src="assets/robeflower.png" class="w-full rounded-lg shadow">
+        </div>
+
+        <!-- Main Product Image -->
+        <div class="col-span-5">
+            <img src="assets/roberose.png" alt="Robe Fille" class="w-full rounded-lg shadow-md">
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-span-5">
+            <h1 class="text-3xl font-bold text-gray-800">Robe fille</h1>
+            <div class="flex items-center space-x-2 mt-2">
+                <span class="text-yellow-400 text-lg">★★★★★</span>
+                <span class="text-gray-500">(110 avis)</span>
+                <span class="text-green-500 font-semibold">En stock</span>
+            </div>
+            <p class="text-2xl font-bold text-pink-600 mt-4">32 Dinars</p>
+            <p class="text-gray-600 mt-4">Ajoutez une touche de charme au dressing de votre petite princesse avec cette robe en coton doux, conçue pour allier confort et style. Parfaite pour les journées ensoleillées ou les événements spéciaux.</p>
+
+            <!-- Colors -->
+            <div class="mt-4">
+                <h3 class="font-semibold">Couleurs :</h3>
+                <div class="flex space-x-2 mt-2">
+                    <div class="w-6 h-6 bg-black rounded-full border"></div>
+                    <div class="w-6 h-6 bg-pink-500 rounded-full border"></div>
+                </div>
+            </div>
+
+            <!-- Size Selection -->
+            <div class="mt-4">
+                <h3 class="font-semibold">Taille :</h3>
+                <select class="border p-2 rounded">
+                    <option>XS</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                </select>
+            </div>
+
+            <!-- Quality Selection -->
+            <div class="mt-4">
+                <h3 class="font-semibold">Qualité :</h3>
+                <div class="flex space-x-4">
+                    <img src="assets/icons/quality1.png" class="w-8 h-8">
+                    <img src="assets/icons/quality2.png" class="w-8 h-8">
+                    <img src="assets/icons/quality3.png" class="w-8 h-8">
+                </div>
+            </div>
+
+            <!-- Quantity -->
+            <div class="mt-4 flex items-center space-x-4">
+                <h3 class="font-semibold">Quantité :</h3>
+                <button class="px-3 py-1 bg-gray-200 rounded">-</button>
+                <span>2</span>
+                <button class="px-3 py-1 bg-gray-200 rounded">+</button>
+            </div>
+
+            <!-- Add to Cart -->
+            <button class="bg-teal-700 text-white py-3 px-6 rounded-full mt-6">Ajouter au panier</button>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="container mx-auto px-6 mt-12">
+        <h2 class="text-2xl font-bold text-gray-800">Produits reliés</h2>
+        <div class="grid grid-cols-4 gap-6 mt-6">
+            <div class="text-center">
+                <img src="assets/chaussure.png" class="rounded-lg shadow-md w-full h-40 object-cover">
+                <button class="bg-teal-700 text-white py-2 px-4 rounded-full mt-3">Consulter</button>
+            </div>
+            <div class="text-center">
+                <img src="assets/certettes.png" class="rounded-lg shadow-md w-full h-40 object-cover">
+                <button class="bg-teal-700 text-white py-2 px-4 rounded-full mt-3">Consulter</button>
+            </div>
+            <div class="text-center">
+                <img src="assets/ilovemymom.png" class="rounded-lg shadow-md w-full h-40 object-cover">
+                <button class="bg-teal-700 text-white py-2 px-4 rounded-full mt-3">Consulter</button>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-pink-300 text-white p-10 mt-10">
+        <div class="max-w-6xl mx-auto grid grid-cols-4 gap-6">
+            <div>
+                <h4 class="font-bold">Support</h4>
+                <p>Avenue Habib Bourguiba, La Soukra, Ariana</p>
+                <p>MumsHub@gmail.com</p>
+                <p>+216 54 035 149</p>
+            </div>
+            <div>
+                <h4 class="font-bold">Compte</h4>
+                <ul>
+                    <li><a href="#" class="hover:underline">Se connecter</a></li>
+                    <li><a href="#" class="hover:underline">Carte</a></li>
+                    <li><a href="#" class="hover:underline">Shop</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">Informations</h4>
+                <ul>
+                    <li><a href="#" class="hover:underline">Politique d'utilisation</a></li>
+                    <li><a href="#" class="hover:underline">Notre contact</a></li>
+                    <li><a href="#" class="hover:underline">Termes de fidélité</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold">Suivez-nous :</h4>
+                <div class="flex space-x-3 mt-2">
+                    <a href="#"><img src="assets/icons/Icon-Facebook.png" class="w-6"></a>
+                    <a href="#"><img src="assets/icons/Icon-Instagram.png" class="w-6"></a>
+                    <a href="#"><img src="assets/icons/Icon-Linkedin.png" class="w-6"></a>
+                    <a href="#"><img src="assets/icons/Icon-Twitter.png" class="w-6"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-100">
+    <!-- Navbar -->
+    <header class="bg-white py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <img src="assets/logo.png" alt="Logo" class="w-20">
+            <nav class="flex space-x-6 text-pink-500">
+                <a href="#" class="flex items-center"><img src="assets/icons/home.svg" class="w-5 h-5 mr-2">Accueil</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/category.svg" class="w-5 h-5 mr-2">Catégories</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/favoris.svg" class="w-5 h-5 mr-2">Favoris</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/historique.svg" class="w-5 h-5 mr-2">Historique</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/contact.svg" class="w-5 h-5 mr-2">Contact</a>
+                <a href="#" class="flex items-center"><img src="assets/icons/panier.svg" class="w-5 h-5 mr-2">Panier</a>
+            </nav>
+            <div class="flex items-center space-x-2">
+                <input type="text" placeholder="Recherche" class="border rounded-full px-4 py-2 w-60">
+                <img src="assets/icons/search.svg" alt="Recherche" class="w-5">
+            </div>
+        </div>
+    </header>
+
+    <!-- Liste des Avis -->
+    <div class="container mx-auto px-6 py-10">
+        <h1 class="text-3xl font-bold text-teal-700 text-left">Liste Des Avis</h1>
+        <div class="grid grid-cols-2 gap-6 mt-8">
+            <div class="bg-white shadow-md p-6 rounded-lg flex w-full">
+                <img src="assets/avatar1.png" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                    <h3 class="font-bold">Body en coton</h3>
+                    <p class="text-gray-600">"Le body en coton est super doux, parfait pour la peau sensible de mon enfant."</p>
+                    <span class="text-yellow-400">★★★★★</span>
+                </div>
+            </div>
+            <div class="bg-white shadow-md p-6 rounded-lg flex w-full">
+                <img src="assets/avatar2.png" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                    <h3 class="font-bold">Puzzle 50 pièces</h3>
+                    <p class="text-gray-600">"Ce jouet interactif est amusant, mais sa qualité laisse à désirer."</p>
+                    <span class="text-yellow-400">★★★★☆</span>
+                </div>
+            </div>
+            <div class="bg-white shadow-md p-6 rounded-lg flex w-full">
+                <img src="assets/avatar3.png" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                    <h3 class="font-bold">Poussette légère</h3>
+                    <p class="text-gray-600">"La poussette est très maniable et idéale pour nos sorties quotidiennes."</p>
+                    <span class="text-yellow-400">★★★★☆</span>
+                </div>
+            </div>
+            <div class="bg-white shadow-md p-6 rounded-lg flex w-full">
+                <img src="assets/avatar4.png" class="w-12 h-12 rounded-full mr-4">
+                <div>
+                    <h3 class="font-bold">Jouet interactif</h3>
+                    <p class="text-gray-600">"Ce jouet interactif est éducatif, mon bébé reste captivé pendant des heures."</p>
+                    <span class="text-yellow-400">★★★★★</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Laisser un avis -->
+    <div class="container mx-auto px-6 py-10 grid grid-cols-12 gap-6 items-center">
+        <div class="col-span-4">
+            <img src="assets/avisimage.png" class="w-72 mx-auto">
+        </div>
+        <div class="col-span-8 bg-white shadow-md p-6 rounded-lg w-full">
+            <h2 class="text-2xl font-bold text-teal-700 text-center">Veuillez Laissez Votre Avis</h2>
+            <input type="text" placeholder="Nom & Prénom" class="w-full border p-3 mt-4 rounded">
+            <textarea placeholder="Votre Message" class="w-full border p-3 mt-4 rounded h-24"></textarea>
+            <button class="bg-teal-700 text-white py-3 px-6 rounded-full mt-4 w-full">Envoyer</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-pink-300 py-6 mt-10">
+        <div class="container mx-auto px-6 text-white grid grid-cols-4 gap-6">
+            <div>
+                <h3 class="font-bold">Support</h3>
+                <p>Avenue Habib Bourguiba, La sokra, Ariana</p>
+                <p>MumsHub@gmail.com</p>
+                <p>+216 54 035 149</p>
+            </div>
+            <div>
+                <h3 class="font-bold">Compte</h3>
+                <p>Se connecter</p>
+                <p>Carte</p>
+                <p>Shop</p>
+            </div>
+            <div>
+                <h3 class="font-bold">Informations</h3>
+                <p>Politique d'utilisation</p>
+                <p>Notre contact</p>
+                <p>Termes de fidélité</p>
+            </div>
+            <div class="flex space-x-4 justify-center">
+                <img src="assets/icons/Icon-Facebook.png" class="w-6">
+                <img src="assets/icons/icon-Lnstagram.png" class="w-6">
+                <img src="assets/icons/Icon-Linkedin.png" class="w-6">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

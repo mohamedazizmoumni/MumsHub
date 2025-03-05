@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Center the content properly */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Adjust button styling */
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #055a4f;
+}
+
+/* Carousel Controls */
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
